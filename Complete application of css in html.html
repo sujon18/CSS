@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureQuests.com</title>
+    <!-- internal css example -->
+    <style>
+        h2 {
+            color: red;
+            font-size: 26px;
+        }
+    </style>
+    <!-- external css link example -->
+    <!-- formation: <link + rel(relationship)+ href(location of the file) -->
+    <link rel="stylesheet" href="complete.css">
+    <!-- external font family added from google fonts website, to get this work, placement of this link has to be right before end of the head tag-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- inline css example -->
+    <h1
+        style="background-color: aqua; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:red;">
+        AdventureQuests
+    </h1>
+    <!-- for internal css use -->
+    <h2>
+        Let's explore the world!
+    </h2>
+    <!-- for external css use -->
+    <h3>
+        Europe
+    </h3>
+    <!-- for element selector example -->
+    <h4>
+        1. Snowdon
+    </h4>
+    <!-- for class selector example -->
+    <h5 class="blue-color">
+        Snowdon is in Wales
+    </h5>
+    <!-- for id selector example -->
+    <p id="bold-text">
+
+        Snowdon, also known as Yr Wyddfa in Welsh, is the highest mountain in Wales and England, standing at an
+        elevation of 1,085 meters (3,560 feet) above sea level.
+        Located in Snowdonia National Park in Gwynedd, Wales, Snowdon attracts climbers, hikers, and nature enthusiasts
+        from around the world.
+    </p>
+    <!-- for attribute selector examples -->
+    <p draggable="true">
+        Geography and Location: Snowdon is situated in Snowdonia National Park, renowned for its stunning landscapes,
+        rugged mountains, lakes, and diverse flora and fauna.
+        The peak itself offers breathtaking panoramic views of the surrounding area.
+    </p>
+    <p draggable="false">
+        Routes to the Summit: There are several paths leading to the summit of Snowdon, catering to various skill
+        levels. These routes include the Llanberis Path (the longest but easiest route), Pyg Track, Miners' Track,
+        Watkin Path, and more. The ascent can vary in difficulty, and some paths involve steep sections and rough
+        terrain.
+    </p>
+    <p draggable="false">
+        Railway: For those who prefer not to hike, the Snowdon Mountain Railway provides a scenic journey to the summit.
+        This narrow-gauge railway offers visitors an alternative way to experience the mountain while enjoying
+        picturesque views during the ascent.
+    </p>
+    <p class="color-properties">
+        Weather: The weather conditions on Snowdon can change rapidly, even during the summer months. It's essential to
+        be prepared for varying weather conditions, including rain, fog, and strong winds, regardless of the season.
+    </p>
+    <!-- how to use google font in a website -->
+    <p class="google-font">
+        Natural Beauty: Snowdonia National Park is known for its natural beauty, with diverse landscapes that include
+        lakes, valleys, forests, and glacially-carved terrain. Flora and fauna thrive in this area, making it a haven
+        for wildlife enthusiasts and botanists.
+    </p>
+    <!-- combining selectors -->
+    <p id="p1" class="AI MF">
+        AI will rebolutionize the world
+    </p>
+    <!-- combining combiners selector -->
+    <ul>
+        <p class="done">Other items</p>
+    </ul>
+    <!-- css positioning css ex -->
+    <h1 id="css-positioning">CSS Positioning</h1>
+    <!-- all different type of positioning btn -->
+    <div class="button-group">
+        <button class="button" id="static-btn">Static Positioning</button>
+        <button class="button" id="relative-btn">Relative Positioning</button>
+        <button class="button" id="absolute-btn">Absolute Positioning</button>
+        <button class="button" id="fixed-btn">Fixed Positioning</button>
+    </div>
+    <!-- static positioning: default positioning of a browser -->
+    <div class="positioning-type static" style="display: block;">
+        <h2>Static Positioning</h2>
+        <code>
+          position: static;<br>
+          left: 50px;<br>
+          top: 50px;<br></code>
+        <div class="box"></div>
+    </div>
+    <!-- relative positioning -->
+    <div class="positioning-type relative" style="display: block;">
+        <h2>Relative Positioning</h2>
+        <code>position: relative;<br>
+        left: 50px;<br>
+        top: 50px;<br></code>
+        <div class="box"></div>
+    </div>
+    <!-- absolute positioning -->
+    <div class="positioning-type absolute" style="display: block;">
+        <h2>Absolute Positioning</h2>
+        <code>
+            position: absolute;<br>
+            top: 50px;<br>
+            left: 50px;<br>
+        </code>
+        <div class="box"></div>
+    </div>
+    <!-- fixed positioning -->
+    <div class="positioning-type fixed" style="display: block;">
+        <h2>Fixed Positioning</h2>
+        <code>
+              position: fixed;<br>
+              top: 50px;<br>
+              left: 50px;<br>
+        </code>
+        <div class="box"></div>
+    </div>
+    <!-- all display properties -->
+    <div>
+        <h1 class="block">Block Display</h1>
+        <h1 class="inline" style="color: blue;">1st Inline display </h1>
+        <h1 class="inline">2nd Inline display </h1>
+        <h1 class="inline-block">Inline Block Display</h1>
+        <h1 class="none">Display none</h1>
+    </div>
+    <!-- all float properties -->
+    <div>
+        <img class="float-left" src="./Assets/chinese-dragon.jpg" alt="dragon-picture">
+        <p>A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.
+            A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.
+            A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.</p>
+
+
+        <img class="float-right" src="./Assets/chinese-dragon.jpg" alt="dragon-picture">
+        <p>A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.
+            A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.
+            A dragon is a large magical legendary creature that appears in the folklore of multiple cultures
+            worldwide. Beliefs about dragons vary considerably through regions, but dragons in Western cultures since
+            the High Middle Ages have often been depicted as winged, horned, and capable of breathing fire. Dragons in
+            eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average
+            intelligence. Commonalities between dragons' traits are often a hybridization of feline, reptilian,
+            mammalian, and avian features. Scholars believe large extinct or migrating crocodiles bear the closest
+            resemblance, especially when encountered in forested or swampy areas, and are most likely the template of
+            modern Asian dragon imagery.</p>
+        <footer class="footer-clear">
+            All rights reserved 2024. Sujon
+        </footer>
+        <!-- table -->
+        <table>
+            <caption>Sample Table</caption>
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+            </tbody>
+        </table>
+            <!-- responsive website -->
+            <!-- media query -->
+            <div class="media-query-container">
+                Hello this is Sujon
+            </div>
+
+            <!-- flexbox -->
+            <div class="flex-container">
+                <div class="flex-box-1 flex-box"></div>
+                <div class="flex-box-2 flex-box"></div>
+                <div class="flex-box"></div>
+                <div class="flex-box"></div>
+                <div class="flex-box"></div>
+            </div>
+
+            <div class="flex-container-2">
+                <div class="flx-ctn-2">Home</div>
+                <div class="flx-ctn-2">About</div>
+                <div class="flx-ctn-2 contact-order">Contact</div>
+                <div class="flx-ctn-2 ">Work</div>
+            </div>
+
+            <div class="flex-container-3">
+              <div class="flex-items"><p>ADFADSF</p></div>
+              <div class="flex-items"><p>ADFADSF</p></div>
+              <div class="flex-items"><p>ADFADSF</p></div>
+              <div class="flex-items"><p>ADFADSF</p></div>
+            </div>
+
+            <!-- css grid -->
+            <div class="grid-container">
+                <!-- first two div= one clumn, one row -->
+                <div class="column-1 card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <!-- grid sizing -->
+            <div class="grid-container-2">
+                <div class="grd-2"></div>
+                <div class="grd-2"></div>
+                <div class="grd-2"></div>
+                <div class="grd-2"></div>
+            </div>
+            <div class="grid-container-3">
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+                <div class="grd-3"></div>
+            </div>
+        
+    </div>
+</body>
+</html>

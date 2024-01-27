@@ -1,0 +1,394 @@
+/* external css example */
+h3 {
+  color: red;
+}
+
+/*element selector:for example below we have h4*/
+h4 {
+  color: blue;
+}
+
+/* class selector: we first need to declare a class( here h5, we name it as a class call blue-color) in html, to select the class, we must use a dot(.) */
+.blue-color {
+  color: blue;
+}
+
+/* id selector: start with the sign # + selector name from the html */
+#bold-text {
+  font-weight: bold;
+}
+
+/* attribute selector: element+ [attribute]+ css value; below is an example */
+p[draggable] {
+  color: blueviolet;
+}
+
+p[draggable="false"] {
+  color: blue;
+}
+
+/* universal selector */
+* {
+  font-weight: 900;
+}
+
+/* css color properties */
+.color-properties {
+  background-color: aqua;
+  color: #B80000;
+}
+
+/* font properties */
+.color-properties {
+  /* 1px=1/96th inch or 0.26mm;
+    1pt(point)=1/72nd inch or 0.35mm;
+    1em(100% of parent) ; 
+    1rem = 100% or root size*/
+  font-size: 18px;
+  font-size: 18pt;
+  font-size: 2em;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+.google-font {
+  font-family: 'Lato', sans-serif;
+  /* border properties */
+  border: 30px solid black;
+  border-top: 2px solid red;
+  /* border width, it takes maximum of four values(top, right, bottom, left) */
+  border-width: 0px 10px 20px 10px;
+  /* padding: create space between the border and content */
+  padding: 20px;
+  /* margin: create space outside the border */
+  margin: 20px;
+}
+
+/* cascading style sheets */
+/* inline style is the highst    priority in hierachy
+position/specipicity (1. ID 2. Attribute 3. Class 4. Element) */
+/* type: 1. Inline 2. Internal 3. External */
+/* Importance: !important;  */
+
+/* combining css selector */
+/* chaining  */
+p#p1.AI.MF {
+  color: green;
+}
+
+/* Combining combiners */
+ul p.done {
+  font-size: .8rem;
+}
+
+ul>p.done {
+  font-size: 2rem;
+}
+
+/* css positioning */
+#css-positioning {
+  color: white;
+  background-color: blue;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid #ccc;
+}
+
+.positioning-type {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.positioning-type h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* Styles for the different types of positioning */
+.static .box {
+  position: static;
+  left: 50px;
+  top: 50px;
+}
+
+.relative .box {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+.absolute .box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fixed .box {
+  position: fixed;
+  top: 50px;
+  left: 800px;
+}
+
+/* display properties */
+
+/* block */
+.block {
+  color: white;
+  background: red;
+}
+
+/* inline */
+.inline {
+  display: inline;
+}
+
+/* inline-block */
+.inline-block {
+  color: white;
+  background: red;
+  width: 200px;
+  height: 200px;
+}
+
+/* none */
+.none {
+  display: none;
+}
+
+/* float properties */
+
+.float-left {
+  height: 300px;
+  width: 500px;
+  float: left;
+}
+
+.float-right {
+  height: 300px;
+  width: 500px;
+  float: right;
+}
+
+/* to avoid float applying to a certain content */
+/* clear: to avoid float property to specific content */
+.footer-clear {
+  clear: both;
+  clear: left;
+  clear: right;
+  color: red;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* to apply no space between cell border */
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 30px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* responsibe websites */
+/* media query */
+.media-query-container {
+  height: 500px;
+  width: 200px;
+  background-color: aqua;
+}
+
+/* 1px to 600px width devices */
+@media (max-width:600px) {
+  .media-query-container {
+    color: red;
+    font-size: 18px;
+    height: 200px;
+    width: 100px;
+  }
+}
+
+/* devices width above 600px */
+@media (min-width:600px) {
+  .media-query-container {
+    color: red;
+    font-size: 36px;
+  }
+}
+
+/* combining media query */
+/* to targer specific with for example here from 600px until 900px */
+@media (min-width:600px) and (max-width:900px) {
+  .media-query-container {
+    color: white;
+    font-size: 26px;
+    background-color: blueviolet;
+  }
+}
+
+/* flex */
+.flex-container {
+  display: flex;
+  /* similarly we can use display:inline-flex; */
+  flex-direction: column;
+  /* the default direction of flex is row flex-direction:row;  */
+  height: 1080px;
+  width: 10%;
+}
+
+.flex-box {
+  background-color: blue;
+  border: 5px solid black;
+  height: 100px;
+  flex: 1;
+  /* means all the div has same height and width */
+}
+
+.flex-box-1 {
+  flex: 2;
+  /* by chaging flex=2 the first box takes two times more width compare to other box */
+}
+
+.flex-box-2 {
+  flex: .5;
+  /* by chaging flex=.5 the second box takes half of the width compare to other box */
+}
+
+.flex-container-2 {
+  display:flex;
+  flex:1;
+  background-color: greenyellow;
+  margin-bottom: 20px;
+}
+.flx-ctn-2{
+  background-color: red;
+  border: none;
+  height: 50px;
+  flex: 1;
+  color:white;
+  font-size: 24px;
+}
+/* flex layout */
+/* order property */
+.contact-order {
+  order:1;
+  flex-wrap:wrap-reverse;
+  /* flex-wrap: wrap;
+  flex-wrap:nowrap; */
+  justify-content: flex-start; /* center , flex-end, space-between */
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+  height: 10vh;
+  align-self: flex-start;  /* if we want a specific item to a different alignment */
+  /* align content only works flex-wrap: wrap;  */
+  align-content: center;
+}
+/* flex sizing */
+.flex-container-3 {
+  display:flex;
+  gap:10px; 
+  background-color: aqua;
+  color: red;
+}
+.flex-items {
+  flex-basis:200px; /* each items is 200px */
+  max-width: 100px;
+  min-width: 200px;
+  flex-shrink: 0;
+  flex-grow:1;
+  flex: 1 1 0; /* order of the flex= grow, shrink , basis */
+}
+
+
+
+/* grid */
+.grid-container {
+  display: grid;
+  /* means each colunn will take two div of the html 
+    to count how many div we need for example two get a grid of 3 column with 5 rows, where each rows has three column each 
+    the equation is (div= cloumn number * rows-number) div=3*5 is 15 div */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 150px 150px 150px 150px;
+  gap: 30px;
+}
+
+.column-1 {
+  grid-column: span 2;
+  /* first and second div = column without gap */
+}
+
+.card {
+  background-color: red;
+}
+/* grid sizing */
+.grid-container-2 {
+  display:grid;
+  /* grid-template is a combination of both row(first) and column  */
+  grid-template: 100px 100px / 200px 200px;
+  grid-template-columns: 200px auto; /* when auto applied to column it takes the 100% width */
+  gap:20px;
+  grid-template-rows: 200px auto; /* when auto applied to row, it try to fit all the content */
+}
+.grd-2{
+  background-color: #4caf50
+}
+.grid-container-3 {
+  display:grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(3, 100px);
+  gap:40px;
+  /* if we dont' have define div of grid we can just use auto */
+  grid-auto-rows:300px;
+  grid-auto-columns:300px;
+
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  /* grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-area*/
+  grid-area:
+}
+.grd-3{
+  background-color: rgb(13, 216, 165)
+}
+
+/* grid placement */
+/* bootstrap */
